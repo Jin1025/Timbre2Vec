@@ -8,8 +8,7 @@
 2. 전처리를 거친 mel-spectrogram을 인풋으로 넣었을 때 아웃풋의 벡터값이 음색을 나타내도록 함
 3. 이를 기반으로 사전에 준비된 가수 22명 중 가장 유사한 음색의 가수 1명을 추천함
 
-프로젝트와 관련된 자세한 설명은 아래의 노션에서 확인할 수 있다.
-<https://plausible-animantarx-d5e.notion.site/c77ab56b26bb4693979f42496e0bef85?pvs=4>
+프로젝트와 관련된 자세한 설명은 [노션](https://plausible-animantarx-d5e.notion.site/c77ab56b26bb4693979f42496e0bef85?pvs=4)에서 확인할 수 있다.
 
 
 ## Data Preprocessing
