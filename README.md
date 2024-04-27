@@ -7,7 +7,6 @@
 2. 전처리를 거친 mel-spectrogram을 인풋으로 넣었을 때 아웃풋의 벡터값이 음색을 나타내도록 함
 3. 이를 기반으로 사전에 준비된 가수 22명 중 가장 유사한 음색의 가수 1명을 추천함
 
---
 
 ## Data Preprocessing
 
@@ -19,7 +18,6 @@ test_input_data.csv : test 및 추천에 사용되는 데이터셋 정보들
 
 용량 제한으로 인해 깃허브에 업로드 불가하나 전처리가 완료된 npy 파일들이 필요할 경우 text me (nixnox10@naver.com)
 
---
 
 ## Model
 
@@ -34,7 +32,6 @@ test_input_data.csv : test 및 추천에 사용되는 데이터셋 정보들
   extract_model.load_state_dict(torch.load(model_path))
   extract_model.to(device)
 
---
 
 ## Demo
 
