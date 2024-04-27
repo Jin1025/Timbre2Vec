@@ -17,6 +17,7 @@
 ![전처리](https://github.com/Jin1025/Timbre2Vec/assets/111305638/ce29b471-f63b-4ca8-bd7e-84ba39cf8984)
 
 input_data.csv : train 용 데이터셋 정보들
+
 test_input_data.csv : test 및 추천에 사용되는 데이터셋 정보들
 
 용량 제한으로 인해 깃허브에 업로드 불가하나 전처리가 완료된 npy 파일들이 필요할 경우 text me (nixnox10@naver.com)
@@ -29,12 +30,11 @@ test_input_data.csv : test 및 추천에 사용되는 데이터셋 정보들
 
 본 프로젝트에서 사용한 3 epoch 동안 학습이 완료된 모델을 사용하기 위해서는 trained_model 폴더의 please.pt를 이용하여 아래와 같이 불러올 수 있다. 다만 개발 환경이 Mac의 mps 였기 때문에, 동일 환경에서만 사용 가능하다.
 
-  model_path = 'please.pt'
-  device = torch.device('mps:0' if torch.backends.mps.is_available() else 'cpu')
-  extract_model = Extract_Model()
-  extract_model.load_state_dict(torch.load(model_path))
-  extract_model.to(device)
-
+    model_path = 'please.pt'
+    device = torch.device('mps:0' if torch.backends.mps.is_available() else 'cpu')
+    extract_model = Extract_Model()
+    extract_model.load_state_dict(torch.load(model_path))
+    extract_model.to(device)
 
 ## Demo
 
